@@ -18,11 +18,11 @@ body{
 }
 header{
     background-image: linear-gradient(to top, #1a5c38, #3cd983);
-    height: 130px;
     margin-top: -10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.516);
     margin-left: -10px;
     margin-right: -10px;
+    min-height: 155px;
 }
 h1{
     text-align: center;
@@ -52,7 +52,7 @@ header > p{
     text-shadow: 1px 1px 3px black;
 }
 nav{
-    margin-top: 45px;
+    margin-top: 55px;
 }
 nav > a{
          color: white;
@@ -66,18 +66,18 @@ nav > a{
 nav > a:hover{
     border-radius: 3px;
     background-color: #3cd983;
-   
+    color: black;
+    transition-duration: 1s;
 }
 main{
-    display: block;
     background-color: #fff;
     max-width: 800px;
     min-width: 320px;
     margin: auto;
     padding: 10px;
-    box-shadow:  0px 1px 1px 3px rgba(0, 0, 0, 0.311);
-    margin-bottom: -500;
-    
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.461);
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px
 }
 article > p{
     text-align:justify;
@@ -96,6 +96,8 @@ span#destaque2{
 }
 span > a{
        text-decoration: none;
+       color: #299158;
+
 }
 span > a:visited{
     color: #1a5c38;
@@ -109,10 +111,17 @@ abbr{
 }
 .caixa_video{
     background-color: #1a5c38;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 53.70%;
 }
 iframe{
-     display: block;
-     width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
 }
 picture > img{
     display: block;
@@ -122,8 +131,7 @@ picture > img{
 }
 picture > img#bugdroid{
     display: block;
-    height: 150px;
-    width: 250px;
+    max-width: 350px;
     margin: auto;
 }
 aside{
@@ -164,22 +172,28 @@ footer {
     background-color: #1a5c38;
     margin-left: -10px;
     margin-right: -10px;
-    color: white;
+    color:  #3cd983;
     margin-bottom: -50px;
+    font-weight: bold;
 
 }
 footer > p{
     font-style: italic;
     text-align: center;
 }
-.mark{
-         font-weight: bold;
+strong{
+         
          color: white;
 }
 ul{
-    display: inline-block;
+    list-style-type: '\2714';
     font-weight: bold;
-    margin-left: 80px;
     padding: 20px;
+    list-style-position: inside;
+    columns: 2;
 
+}
+
+.externo::after{
+    content: '\00a0\1f517';
 }
